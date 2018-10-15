@@ -37,6 +37,7 @@
         </dependencies>
     </dependencyManagement>
 
+
     <dependencies>
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
@@ -55,6 +56,11 @@
             <artifactId>jersey-media-moxy</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-dynamodb</artifactId>
+            <version>1.11.297</version>
+        </dependency>
 
     </dependencies>
     <properties>

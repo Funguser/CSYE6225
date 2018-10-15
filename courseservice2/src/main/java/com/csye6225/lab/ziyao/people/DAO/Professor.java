@@ -1,14 +1,12 @@
-package com.csye6225.lab.ziyao.datamodel;
+package com.csye6225.lab.ziyao.people.DAO;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
 
 @XmlRootElement
-public class Professor {
-    private String firstName;
+public class Professor extends People{
     private String department;
-    private long professorId;
     private Date joiningDate;
 
     public Professor(){
@@ -16,8 +14,8 @@ public class Professor {
     }
 
 
-    public Professor(long professorId, String firstName, String department, Date joingDate){
-        this.professorId = professorId;
+    public Professor(long professorId, String firstName, String lastName, String department, Date joingDate){
+        super(firstName, lastName, joingDate, professorId);
         this.firstName = firstName;
         this.department = department;
         this.joiningDate = joingDate;
@@ -38,14 +36,6 @@ public class Professor {
 
     public void setDepartment(String department) {
         this.department = department;
-    }
-
-    public long getProfessorId() {
-        return professorId;
-    }
-
-    public void setProfessorId(long professorId) {
-        this.professorId = professorId;
     }
 
     public Date getJoiningDate() {

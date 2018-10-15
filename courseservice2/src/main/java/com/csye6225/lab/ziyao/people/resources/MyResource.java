@@ -1,4 +1,4 @@
-package com.csye6225.lab.ziyao.resources;
+package com.csye6225.lab.ziyao.people.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

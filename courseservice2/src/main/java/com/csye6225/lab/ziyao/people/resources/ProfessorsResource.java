@@ -1,9 +1,8 @@
-package com.csye6225.lab.ziyao.resources;
+package com.csye6225.lab.ziyao.people.resources;
 
-import com.csye6225.lab.ziyao.datamodel.Professor;
-import com.csye6225.lab.ziyao.service.ProfessorService;
+import com.csye6225.lab.ziyao.people.DAO.Professor;
+import com.csye6225.lab.ziyao.people.service.ProfessorService;
 
-import javax.print.attribute.standard.Media;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.Date;

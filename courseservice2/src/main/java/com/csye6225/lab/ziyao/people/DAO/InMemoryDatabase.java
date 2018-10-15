@@ -1,9 +1,8 @@
-package com.csye6225.lab.ziyao.datamodel;
+package com.csye6225.lab.ziyao.people.DAO;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 
 public class InMemoryDatabase {
     private static HashMap<Long, Professor> profesorDB = new HashMap<>();

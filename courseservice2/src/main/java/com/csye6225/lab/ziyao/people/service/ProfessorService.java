@@ -1,9 +1,8 @@
-package com.csye6225.lab.ziyao.service;
+package com.csye6225.lab.ziyao.people.service;
 
-import com.csye6225.lab.ziyao.datamodel.InMemoryDatabase;
-import com.csye6225.lab.ziyao.datamodel.Professor;
+import com.csye6225.lab.ziyao.people.DAO.InMemoryDatabase;
+import com.csye6225.lab.ziyao.people.DAO.Professor;
 
-import javax.ws.rs.Produces;
 import java.util.*;
 
 public class ProfessorService {
