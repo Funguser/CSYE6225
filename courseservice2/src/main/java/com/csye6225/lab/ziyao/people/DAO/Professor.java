@@ -14,7 +14,7 @@ public class Professor extends People{
     }
 
 
-    public Professor(long professorId, String firstName, String lastName, String department, Date joingDate){
+    public Professor(int professorId, String firstName, String lastName, String department, Date joingDate){
         super(firstName, lastName, joingDate, professorId);
         this.firstName = firstName;
         this.department = department;

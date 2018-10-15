@@ -4,9 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Program {
+    String name;
     List<Course> courseList;
 
     public Program(){
         courseList = new ArrayList<>();
+    }
+
+    public Program(String name) {
+        this.name = name;
     }
 }

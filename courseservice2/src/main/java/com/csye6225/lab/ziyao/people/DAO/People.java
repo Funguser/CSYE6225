@@ -6,9 +6,9 @@ public class People {
     String firstName;
     String lastName;
     Date registerDate;
-    long id;
+    int id;
 
-    public People(String firstName, String lastName, Date registerDate, long id){
+    public People(String firstName, String lastName, Date registerDate, int id){
         this.firstName = firstName;
         this.lastName = lastName;
         this.registerDate = registerDate;
@@ -43,11 +43,11 @@ public class People {
         this.registerDate = registerDate;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 }
