@@ -2,6 +2,7 @@ package com.csye6225.lab.ziyao.people.DAO;
 
 import java.util.Date;
 
+
 public class People {
     String firstName;
     String lastName;

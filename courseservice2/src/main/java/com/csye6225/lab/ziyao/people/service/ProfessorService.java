@@ -9,16 +9,12 @@ public class ProfessorService {
     HashMap<Integer, Professor> profMap = InMemoryDatabase.getInstance().getProfesorDB();
 
     public List<Professor> getAllProfessors() {
-        Professor prof1 = new Professor(1, "Tom", "Tom", "InfoSystems", new Date());
-        Professor prof2 = new Professor(2, "Cat", "Cat", "InfoSystems", new Date());
-
-        profMap.put(1, prof1);
-        profMap.put(2, prof2);
-
         return new ArrayList<Professor>(profMap.values());
     }
 
     public Professor getProfessor(int profId) {
+        if (!profMap.containsKey(profId))
+            return null;
         return profMap.get(profId);
     }
 
@@ -30,6 +26,8 @@ public class ProfessorService {
     }
 
     public Professor deleteProfessor(int profId) {
+        if (!profMap.containsKey(profId))
+            return null;
         Professor deletedProfDetails = profMap.get(profId);
         profMap.remove(profId);
         return deletedProfDetails;
@@ -45,6 +43,8 @@ public class ProfessorService {
     }
 
     public Professor updateProfessorInformation(int profId, Professor prof) {
+        if (!profMap.containsKey(profId))
+            return null;
         Professor oldProf = profMap.get(profId);
         profId = oldProf.getId();
 

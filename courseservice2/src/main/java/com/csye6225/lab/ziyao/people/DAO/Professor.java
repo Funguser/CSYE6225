@@ -4,10 +4,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
 
-@XmlRootElement
 public class Professor extends People{
     private String department;
-    private Date joiningDate;
 
     public Professor(){
 
@@ -18,7 +16,6 @@ public class Professor extends People{
         super(firstName, lastName, joingDate, professorId);
         this.firstName = firstName;
         this.department = department;
-        this.joiningDate = joingDate;
     }
 
     public String getFirstName() {
@@ -38,11 +35,4 @@ public class Professor extends People{
         this.department = department;
     }
 
-    public Date getJoiningDate() {
-        return joiningDate;
-    }
-
-    public void setJoiningDate(Date joiningDate) {
-        this.joiningDate = joiningDate;
-    }
 }

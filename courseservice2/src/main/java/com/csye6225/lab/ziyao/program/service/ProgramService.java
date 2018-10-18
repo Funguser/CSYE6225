@@ -10,39 +10,53 @@ import java.util.List;
 
 public class ProgramService {
     InMemoryDatabase database;
-    List<Program> programList;
+    HashMap<String, Program> programDB;
 
 
     public ProgramService(){
         database = InMemoryDatabase.getInstance();
-        programList = database.getProgramList();
+        programDB = database.getProgramDB();
     }
 
-    public Student getStudent(int id) {
-        if (allStudent.keySet().contains(id))
-            return allStudent.get(id);
-        return null;
+    public CourseService getCorrCourseService(String programName) {
+        if (getProgram(programName) == null)
+            return new CourseService();
+        return new CourseService(programName);
     }
 
-    public Student addStudent(Student student){
-        student.setId(database.getStudentId());
-        allStudent.put(student.getId(), student);
-        database.setStudentId(database.getStudentId() + 1);
-        return student;
+    public List<Program> getAllProgram() {
+        return new ArrayList<>(programDB.values());
     }
 
-    public Student deleteStudent(int id) {
-        if (!allStudent.keySet().contains(id))
+    public Program getProgram(String id) {
+        String name = id.replaceAll("\\s*", "");
+        if (!programDB.containsKey(name))
             return null;
-        Student student = allStudent.get(id);
-        allStudent.remove(id);
-        return student;
+        return programDB.get(name);
     }
 
-    public Student editStudent(int id, Student student) {
-        if (!allStudent.keySet().contains(id))
+    public Program addProgram(Program program) {
+        String name = program.getName().replaceAll("\\s*", "");
+        if (programDB.containsKey(name))
             return null;
-        allStudent.put(id, student);
-        return student;
+        programDB.put(name, program);
+        return program;
+    }
+
+    public Program deleteProgram(String id) {
+        String name = id.replaceAll("\\s*", "");
+        if (!programDB.containsKey(name))
+            return null;
+        Program program = programDB.get(name);
+        programDB.remove(name);
+        return program;
+    }
+
+    public Program editProgram(String id, Program program) {
+        String name = id.replaceAll("\\s*", "");
+        if (!programDB.containsKey(name))
+            return null;
+        programDB.put(name, program);
+        return program;
     }
 }

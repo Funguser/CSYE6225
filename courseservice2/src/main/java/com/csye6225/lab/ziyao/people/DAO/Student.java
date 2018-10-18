@@ -13,11 +13,17 @@ public class Student extends People {
     List<Course> courseList;
     Program program;
 
-    public Student(String firstName, String lastName, Date registerDate, long id, Program program) {
+    public Student(String firstName, String lastName, Date registerDate, int id, Program program) {
         super(firstName, lastName, registerDate, id);
         this.image = new Image();
         this.courseList = new ArrayList<>();
         this.program = program;
+    }
+
+    public Student() {
+        courseList = new ArrayList<>();
+        image = new Image();
+        program = new Program();
     }
 
 
@@ -44,4 +50,5 @@ public class Student extends People {
     public void setProgram(Program program) {
         this.program = program;
     }
+
 }
