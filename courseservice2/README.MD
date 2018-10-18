@@ -1,4 +1,5 @@
 There are four parts in this program
+URL: CourseServiceQzy-env.c7uazb7xgp.us-west-1.elasticbeanstalk.com
 1. Professor Service
 /professors GET
 /professors POST jsonParams
