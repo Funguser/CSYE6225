@@ -13,7 +13,8 @@ URL: CourseServiceQzy-env.c7uazb7xgp.us-west-1.elasticbeanstalk.com
 {
         "firstName": "Tommmmm",
         "lastName": "Tommmmmmm",
-        "department": "InfoSystems"
+        "department": "InfoSystems",
+        "id": 3
 }
 /professors/professorId DELETE
 
@@ -28,7 +29,8 @@ URL: CourseServiceQzy-env.c7uazb7xgp.us-west-1.elasticbeanstalk.com
 /students/studentId PUT jsonParams
     {
         "firstName": "A",
-        "lastName": "AA"
+        "lastName": "AA",
+        "id":3
     }
 /students/studentId DELETE
 
