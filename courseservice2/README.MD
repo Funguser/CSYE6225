@@ -1,5 +1,6 @@
 There are four parts in this program
 URL: CourseServiceQzy-env.c7uazb7xgp.us-west-1.elasticbeanstalk.com
+Github: https://github.com/Funguser/CSYE6225/tree/master/courseservice2
 1. Professor Service
 /professors GET
 /professors POST jsonParams

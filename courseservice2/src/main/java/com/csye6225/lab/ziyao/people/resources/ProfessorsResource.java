@@ -10,7 +10,11 @@ import java.util.List;
 
 @Path("professors")
 public class ProfessorsResource {
-    ProfessorService professorService = new ProfessorService();
+    ProfessorService professorService;
+
+    public ProfessorsResource() throws Exception {
+        professorService = new ProfessorService();
+    }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

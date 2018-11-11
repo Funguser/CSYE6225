@@ -11,6 +11,10 @@ import java.util.List;
 @Path("students")
 public class StudentResource {
     StudentService studentService = new StudentService();
+
+    public StudentResource() throws Exception {
+    }
+
     @GET
     @Path("/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -45,28 +49,28 @@ public class StudentResource {
         return studentService.getAllStudent();
     }
 
-    @GET
-    @Path("/{studentId}/courses")
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<Course> getCourseList(@PathParam("studentId") int id) {
-        return studentService.getCourseList(id);
-    }
+//    @GET
+//    @Path("/{studentId}/courses")
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public List<Course> getCourseList(@PathParam("studentId") int id) {
+//        return studentService.getCourseList(id);
+//    }
 
-    @PUT
-    @Path("/{studentId}/courses")
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<Course> registerCourse(@PathParam("studentId") int id,
-                                       @QueryParam("courseName") String courseName) {
-        return studentService.registerCourse(id, courseName);
-    }
-
-    @DELETE
-    @Path("/{studentId}/courses")
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<Course> dropCourse(@PathParam("studentId") int id,
-                                   @QueryParam("courseName") String courseName) {
-        return studentService.dropCourse(id, courseName);
-    }
+//    @PUT
+//    @Path("/{studentId}/courses")
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public List<Course> registerCourse(@PathParam("studentId") int id,
+//                                       @QueryParam("courseName") String courseName) {
+//        return studentService.registerCourse(id, courseName);
+//    }
+//
+//    @DELETE
+//    @Path("/{studentId}/courses")
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public List<Course> dropCourse(@PathParam("studentId") int id,
+//                                   @QueryParam("courseName") String courseName) {
+//        return studentService.dropCourse(id, courseName);
+//    }
 
 }
 

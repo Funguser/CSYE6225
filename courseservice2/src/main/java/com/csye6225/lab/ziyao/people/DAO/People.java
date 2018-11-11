@@ -7,9 +7,9 @@ public class People {
     String firstName;
     String lastName;
     Date registerDate;
-    int id;
+    String id;
 
-    public People(String firstName, String lastName, Date registerDate, int id){
+    public People(String firstName, String lastName, Date registerDate, String id){
         this.firstName = firstName;
         this.lastName = lastName;
         this.registerDate = registerDate;
@@ -44,11 +44,11 @@ public class People {
         this.registerDate = registerDate;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 }
