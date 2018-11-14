@@ -22,7 +22,7 @@ public class CourseResource {
     @GET
     @Path("{courseId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Course getCourse(@PathParam("courseId") int courseId) {
+    public Course getCourse(@PathParam("courseId") String courseId) {
         return courseService.getCourse(courseId);
     }
 
@@ -37,7 +37,7 @@ public class CourseResource {
     @Path("{courseId}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Course editCourse(@PathParam("courseId")int courseId, Course course) {
+    public Course editCourse(@PathParam("courseId")String courseId, Course course) {
         return courseService.editCourse(courseId, course);
 //        try {
 //            JSONObject jObject = new JSONObject(jsonString);
@@ -58,7 +58,7 @@ public class CourseResource {
     @DELETE
     @Path("{courseId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Course deleteCourse(@PathParam("courseId") int courseId) {
+    public Course deleteCourse(@PathParam("courseId") String courseId) {
         return courseService.deleteCourse(courseId);
     }
 

@@ -18,7 +18,7 @@ public class StudentResource {
     @GET
     @Path("/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Student getStudent(@PathParam("studentId") int id) {
+    public Student getStudent(@PathParam("studentId") String id) {
         return studentService.getStudent(id);
     }
 
@@ -31,7 +31,7 @@ public class StudentResource {
     @DELETE
     @Path("/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Student deleteStudent(@PathParam("studentId") int id){
+    public Student deleteStudent(@PathParam("studentId") String id){
         return studentService.deleteStudent(id);
     }
 
@@ -39,14 +39,16 @@ public class StudentResource {
     @Path("/{studentId}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Student editStudent(@PathParam("studentId") int id, Student student) {
+    public Student editStudent(@PathParam("studentId") String id, Student student) {
         return studentService.editStudent(id, student);
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Student> getAllStudent() {
-        return studentService.getAllStudent();
+    public List<Student> getAllStudent(@QueryParam("department") String department) {
+        if (department == null)
+            return studentService.getAllStudent();
+        return studentService.getStudentByDepartment(department);
     }
 
 //    @GET

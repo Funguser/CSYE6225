@@ -7,7 +7,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@Path("course/board/announcement")
+@Path("announcements")
 public class AnnouncementResource {
     AnnouncementService announcementService;
 
@@ -18,7 +18,7 @@ public class AnnouncementResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{annoucenmentId}")
-    public Announcement getAnnouncement(@PathParam("annoucenmentId") int AnnouncementId){
+    public Announcement getAnnouncement(@PathParam("annoucenmentId") String AnnouncementId){
         return announcementService.getAnnouncement(AnnouncementId);
     }
 
@@ -33,7 +33,7 @@ public class AnnouncementResource {
     @Path("/{AnnouncementId}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Announcement updateAnnouncement(@PathParam("AnnouncementId") int AnnouncementId, Announcement annoucenment){
+    public Announcement updateAnnouncement(@PathParam("AnnouncementId") String AnnouncementId, Announcement annoucenment){
         return announcementService.updateAnnouncementInformation(AnnouncementId, annoucenment);
     }
 
@@ -41,14 +41,14 @@ public class AnnouncementResource {
     @DELETE
     @Path("/{AnnouncementId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Announcement deleteAnnouncement(@PathParam("AnnouncementId") int announcementId){
+    public Announcement deleteAnnouncement(@PathParam("AnnouncementId") String announcementId){
         return announcementService.deleteAnnouncement(announcementId);
     }
 
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Announcement> getAllAnnouncement(@QueryParam("boardId") Integer boardId){
+    public List<Announcement> getAllAnnouncement(@QueryParam("boardId") String boardId){
         if (boardId != null)
             return announcementService.getAllAnnouncement(boardId);
         return null;

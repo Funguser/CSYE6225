@@ -6,6 +6,9 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.csye6225.lab.ziyao.DynamoDB.DynamoDBConnector;
 import com.csye6225.lab.ziyao.people.DAO.Professor;
+import com.csye6225.lab.ziyao.people.DAO.Student;
+import com.csye6225.lab.ziyao.people.service.ProfessorService;
+import com.csye6225.lab.ziyao.people.service.StudentService;
 import com.csye6225.lab.ziyao.program.DAO.Course;
 //import com.csye6225.lab.ziyao.resource.InMemoryDatabase;
 
@@ -13,8 +16,16 @@ import java.util.*;
 
 public class CourseService {
     static DynamoDBConnector dynamoDB;
-    DynamoDBMapper mapper;
-
+    static DynamoDBMapper mapper;
+    static {
+        try {
+            dynamoDB = new DynamoDBConnector();
+            dynamoDB.init();
+            mapper = new DynamoDBMapper(dynamoDB.getConnector());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public CourseService() throws Exception {
         dynamoDB = new DynamoDBConnector();
@@ -35,12 +46,14 @@ public class CourseService {
         return result;
     }
 
-    public Course getCourse(int courseId) {
+    public static Course getCourse(String courseId) {
+        if (courseId == null)
+            return null;
         Course course = new Course();
         course.setCourseId(courseId);
 
         Map<String, AttributeValue> eav = new HashMap<>();
-        eav.put("v_id", new AttributeValue().withN(String.valueOf(courseId)));
+        eav.put("v_id", new AttributeValue().withS(courseId));
         DynamoDBQueryExpression<Course> spec = new DynamoDBQueryExpression<Course>();
         spec.setHashKeyValues(course);
         spec.setIndexName("idx_courseId");
@@ -53,23 +66,69 @@ public class CourseService {
     }
 
     public Course addCourse(Course course) {
-        if (course.getCourseId() == 0)
+        if (course.getCourseId() == null)
             return null;
         if (getCourse(course.getCourseId()) != null)
             return null;
+        if (course.getProfessorId() != null && ProfessorService.getProfessor(course.getProfessorId()) == null)
+            return null;
+        if (course.getTAId() != null && StudentService.getStudent(course.getTAId()) == null)
+            return null;
+
+        if (course.getRegisteredStudentList().size() != 0) {
+            for (String studentId : course.getRegisteredStudentList()) {
+                Student student = StudentService.getStudent(studentId);
+                if (student == null)
+                    continue;
+                if (isExist(student, course.getCourseId()))
+                    continue;
+                student.getCourseList().add(course.getCourseId());
+                mapper.save(student);
+
+            }
+        }
+
         mapper.save(course);
         return course;
     }
 
-    public Course editCourse(int courseId, Course course) {
+    public boolean isExist(Student student, String courseId) {
+        for (String id : student.getCourseList()) {
+            if (id.equals(courseId))
+                return true;
+        }
+        return false;
+    }
+
+    public Course deleteCourse(String courseId) {
+        Course course = getCourse(courseId);
+        if (course != null) {
+            for (String id : course.getRegisteredStudentList()) {
+                Student student = StudentService.getStudent(id);
+                if (student == null)
+                    continue;
+                if (isExist(student, courseId)) {
+                    student.getCourseList().remove(courseId);
+                    mapper.save(student);
+                }
+            }
+
+            mapper.delete(course);
+        }
+        return course;
+    }
+
+    public Course editCourse(String courseId, Course course) {
         Course cour = getCourse(courseId);
         if (cour != null) {
+            deleteCourse(courseId);
             cour.setCourseName(course.getCourseName());
             cour.setBoardId(course.getBoardId());
             cour.setDepartment(course.getDepartment());
             cour.setProfessorId(course.getProfessorId());
             cour.setTAId(course.getTAId());
-            mapper.save(cour);
+            cour.setRegisteredStudentList(course.getRegisteredStudentList());
+            addCourse(cour);
         }
         return cour;
     }
@@ -96,13 +155,7 @@ public class CourseService {
 //        return course;
 //    }
 
-    public Course deleteCourse(int courseId) {
-        Course course = getCourse(courseId);
-        if (course != null) {
-            mapper.delete(course);
-        }
-        return course;
-    }
+
 
 //
 //    public List<Lecture> getAllLectures(String courseName) {

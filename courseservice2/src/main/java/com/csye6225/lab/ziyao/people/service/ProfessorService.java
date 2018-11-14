@@ -8,6 +8,7 @@ import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.model.GlobalSecondaryIndex;
 import com.csye6225.lab.ziyao.DynamoDB.DynamoDBConnector;
+import com.csye6225.lab.ziyao.program.DAO.Course;
 import com.csye6225.lab.ziyao.resource.InMemoryDatabase;
 import com.csye6225.lab.ziyao.people.DAO.Professor;
 
@@ -17,8 +18,16 @@ import java.util.*;
 
 public class ProfessorService {
     static DynamoDBConnector dynamoDB;
-    DynamoDBMapper mapper;
-
+    static DynamoDBMapper mapper;
+    static {
+        try {
+            dynamoDB = new DynamoDBConnector();
+            dynamoDB.init();
+            mapper = new DynamoDBMapper(dynamoDB.getConnector());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public ProfessorService() throws Exception {
         dynamoDB = new DynamoDBConnector();
@@ -33,7 +42,9 @@ public class ProfessorService {
         return result;
     }
 
-    public Professor getProfessor(int profId) {
+    public static Professor getProfessor(String profId) {
+        if (profId == null)
+            return null;
         Professor prof = new Professor();
         prof.setProfessorId(profId);
 
@@ -51,7 +62,7 @@ public class ProfessorService {
     }
 
     public Professor addProfessor(Professor prof) {
-        if (prof.getProfessorId() == 0)
+        if (prof.getProfessorId() == null)
             return null;
         if (getProfessor(prof.getProfessorId()) != null)
             return null;
@@ -60,9 +71,17 @@ public class ProfessorService {
         return prof;
     }
 
-    public Professor deleteProfessor(int profId) {
+    public Professor deleteProfessor(String profId) {
         Professor prof = getProfessor(profId);
         if (prof != null) {
+            DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
+            List<Course> courseList = mapper.scan(Course.class, scanExpression);
+            for (Course course : courseList) {
+                if (profId.equals(course.getProfessorId())) {
+                    course.setProfessorId("");
+                    mapper.save(course);
+                }
+            }
             mapper.delete(prof);
             return prof;
         }
@@ -79,14 +98,14 @@ public class ProfessorService {
         return result;
     }
 
-    public Professor updateProfessorInformation(int profId, Professor prof) {
+    public Professor updateProfessorInformation(String profId, Professor prof) {
         Professor professor = getProfessor(profId);
-        System.out.println("ok");
         if (prof != null) {
+            deleteProfessor(profId);
             professor.setDepartment(prof.getDepartment());
             professor.setFirstName(prof.getFirstName());
             professor.setLastName(prof.getLastName());
-            mapper.save(professor);
+            addProfessor(professor);
             return professor;
         }
         return null;

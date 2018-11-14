@@ -9,13 +9,23 @@ import com.csye6225.lab.ziyao.DynamoDB.DynamoDBConnector;
 import com.csye6225.lab.ziyao.people.DAO.Professor;
 import com.csye6225.lab.ziyao.people.DAO.Student;
 import com.csye6225.lab.ziyao.program.DAO.Course;
+import com.csye6225.lab.ziyao.program.service.CourseService;
 import com.csye6225.lab.ziyao.resource.InMemoryDatabase;
 
 import java.util.*;
 
 public class StudentService {
     static DynamoDBConnector dynamoDB;
-    DynamoDBMapper mapper;
+    static DynamoDBMapper mapper;
+    static {
+        try {
+            dynamoDB = new DynamoDBConnector();
+            dynamoDB.init();
+            mapper = new DynamoDBMapper(dynamoDB.getConnector());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 
     public StudentService() throws Exception {
@@ -25,7 +35,9 @@ public class StudentService {
 
     }
 
-    public Student getStudent(int id) {
+    public static Student getStudent(String id) {
+        if (id == null)
+            return null;
         Student student = new Student();
         student.setStudentId(id);
 
@@ -43,32 +55,72 @@ public class StudentService {
     }
 
     public Student addStudent(Student student){
-        if (student.getStudentId() == 0)
+        if (student.getStudentId() == null)
             return null;
         if (getStudent(student.getStudentId()) != null)
             return null;
         student.setRegisterDate(new Date());
+        List<String> registeredCourse = new ArrayList<>();
+        if (student.getCourseList().size() != 0) {
+            for (String courseId : student.getCourseList()) {
+                if (CourseService.getCourse(courseId) == null)
+                    continue;
+                Course course = CourseService.getCourse(courseId);
+                if (isExist(course, student.getStudentId()))
+                    continue;
+                course.getRegisteredStudentList().add(student.getStudentId());
+                mapper.save(course);
+                registeredCourse.add(courseId);
+            }
+        }
+        student.setCourseList(registeredCourse);
         mapper.save(student);
         return student;
     }
 
-    public Student deleteStudent(int id) {
+    public boolean isExist(Course course, String studentId) {
+        for (String id : course.getRegisteredStudentList()) {
+            if (id.equals(studentId))
+                return true;
+        }
+        return false;
+    }
+
+    public Student deleteStudent(String id) {
         Student student = getStudent(id);
         if (student != null) {
+            for (String courseId : student.getCourseList()) {
+                Course course = CourseService.getCourse(courseId);
+                if (course == null)
+                    continue;
+                if (!isExist(course, id))
+                    continue;
+                course.getRegisteredStudentList().remove(id);
+                mapper.save(course);
+            }
+            DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
+            List<Course> courseList = mapper.scan(Course.class, scanExpression);
+            for (Course course : courseList) {
+                if (id.equals(course.getTAId())){
+                    course.setTAId("");
+                    mapper.save(course);
+                }
+            }
             mapper.delete(student);
             return student;
         }
         return null;
     }
 
-    public Student editStudent(int id, Student student) {
+    public Student editStudent(String id, Student student) {
         Student stu = getStudent(id);
         if (stu != null) {
+            deleteStudent(id);
             stu.setDepartment(student.getDepartment());
             stu.setFirstName(student.getFirstName());
             stu.setLastName(student.getLastName());
             stu.setCourseList(student.getCourseList());
-            mapper.save(stu);
+            addStudent(stu);
             return stu;
         }
         return null;
@@ -76,6 +128,15 @@ public class StudentService {
 
     public List<Student> getAllStudent() {
         DynamoDBScanExpression scanExpression = new DynamoDBScanExpression();
+        List<Student> result = mapper.scan(Student.class, scanExpression);
+        return result;
+    }
+
+    public List<Student> getStudentByDepartment(String department) {
+        Map<String, AttributeValue> eav = new HashMap<>();
+        eav.put(":val1", new AttributeValue().withS(department));
+        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression()
+                .withFilterExpression("department = :val1").withExpressionAttributeValues(eav);
         List<Student> result = mapper.scan(Student.class, scanExpression);
         return result;
     }

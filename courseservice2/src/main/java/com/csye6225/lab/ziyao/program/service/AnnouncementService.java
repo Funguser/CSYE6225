@@ -2,10 +2,13 @@ package com.csye6225.lab.ziyao.program.service;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
+import com.amazonaws.services.dynamodbv2.model.Condition;
 import com.csye6225.lab.ziyao.DynamoDB.DynamoDBConnector;
 import com.csye6225.lab.ziyao.people.DAO.Student;
 import com.csye6225.lab.ziyao.program.DAO.Announcement;
+import com.csye6225.lab.ziyao.program.DAO.Board;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,7 +16,16 @@ import java.util.Map;
 
 public class AnnouncementService {
     static DynamoDBConnector dynamoDB;
-    DynamoDBMapper mapper;
+    static DynamoDBMapper mapper;
+    static {
+        try {
+            dynamoDB = new DynamoDBConnector();
+            dynamoDB.init();
+            mapper = new DynamoDBMapper(dynamoDB.getConnector());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 
     public AnnouncementService() throws Exception {
@@ -23,12 +35,14 @@ public class AnnouncementService {
     }
 
 
-    public Announcement getAnnouncement(int announcementId) {
+    public static Announcement getAnnouncement(String announcementId) {
+        if (announcementId == null)
+            return null;
         Announcement announcement = new Announcement();
-        announcement.setAnnoucementId(announcementId);
+        announcement.setAnnouncementId(announcementId);
 
         Map<String, AttributeValue> eav = new HashMap<>();
-        eav.put("v_id", new AttributeValue().withN(String.valueOf(announcementId)));
+        eav.put("v_id", new AttributeValue().withS(announcementId));
         DynamoDBQueryExpression<Announcement> spec = new DynamoDBQueryExpression<Announcement>();
         spec.setHashKeyValues(announcement);
         spec.setIndexName("idx_announcementId");
@@ -41,26 +55,29 @@ public class AnnouncementService {
     }
 
     public Announcement addAnnouncement(Announcement annoucenment) {
-        if (annoucenment.getAnnoucementId() == 0)
+        if (annoucenment.getAnnouncementId() == null)
             return null;
-        Announcement ann = getAnnouncement(annoucenment.getAnnoucementId());
+        Announcement ann = getAnnouncement(annoucenment.getAnnouncementId());
         if (ann != null)
+            return null;
+        if (BoardService.getBoard(annoucenment.getBoardId())== null)
             return null;
         mapper.save(annoucenment);
         return annoucenment;
     }
 
-    public Announcement updateAnnouncementInformation(int announcementId, Announcement annoucenment) {
+    public Announcement updateAnnouncementInformation(String announcementId, Announcement announcement) {
         Announcement ann = getAnnouncement(announcementId);
         if (ann == null)
             return null;
-        ann.setAnnoucementText(annoucenment.getAnnoucementText());
-        ann.setBoardId(annoucenment.getBoardId());
-        mapper.save(ann);
+        if (BoardService.getBoard(announcement.getBoardId()) == null)
+            return null;
+        deleteAnnouncement(announcementId);
+        addAnnouncement(announcement);
         return ann;
     }
 
-    public Announcement deleteAnnouncement(int announcementId) {
+    public Announcement deleteAnnouncement(String announcementId) {
         Announcement announcement = getAnnouncement(announcementId);
         if (announcement == null)
             return null;
@@ -68,11 +85,14 @@ public class AnnouncementService {
         return announcement;
     }
 
-    public List<Announcement> getAllAnnouncement(Integer boardId) {
+    public List<Announcement> getAllAnnouncement(String boardId) {
         Map<String, AttributeValue> eav = new HashMap<>();
-        eav.put(":val1", new AttributeValue().withN(boardId.toString()));
-        DynamoDBQueryExpression<Announcement> dynamoDBQueryExpression = new DynamoDBQueryExpression<Announcement>().withKeyConditionExpression("boardId = :val1").withExpressionAttributeValues(eav);
-        List<Announcement> result = mapper.query(Announcement.class, dynamoDBQueryExpression);
+        eav.put(":val1", new AttributeValue().withS(boardId));
+//        DynamoDBQueryExpression<Announcement> queryExpression = new DynamoDBQueryExpression<Announcement>()
+//                .withRangeKeyCondition("boardId", new Condition()).withExpressionAttributeValues(eav);
+        DynamoDBScanExpression scanExpression = new DynamoDBScanExpression()
+                .withFilterExpression("boardId = :val1").withExpressionAttributeValues(eav);
+        List<Announcement> result = mapper.scan(Announcement.class, scanExpression);
         return result;
     }
 }

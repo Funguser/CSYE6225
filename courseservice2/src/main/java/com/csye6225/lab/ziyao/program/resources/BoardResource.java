@@ -7,7 +7,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@Path("board")
+@Path("boards")
 public class BoardResource {
     BoardService boardService;
 
@@ -18,7 +18,7 @@ public class BoardResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/{boardId}")
-    public Board getBoard(@PathParam("boardId") int boardId){
+    public Board getBoard(@PathParam("boardId") String boardId){
         return boardService.getBoard(boardId);
     }
 
@@ -33,7 +33,7 @@ public class BoardResource {
     @Path("/{boardId}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Board updateBoard(@PathParam("boardId") int boardId, Board board){
+    public Board updateBoard(@PathParam("boardId") String boardId, Board board){
         return boardService.updateBoardInformation(boardId, board);
     }
 
@@ -41,7 +41,7 @@ public class BoardResource {
     @DELETE
     @Path("/{boardId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Board deleteBoard(@PathParam("boardId") int boardID){
+    public Board deleteBoard(@PathParam("boardId") String boardID){
         return boardService.deleteBoard(boardID);
     }
 

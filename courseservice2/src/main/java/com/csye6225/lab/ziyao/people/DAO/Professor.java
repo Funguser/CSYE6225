@@ -12,7 +12,7 @@ import java.util.Date;
 @DynamoDBTable(tableName = "professor")
 public class Professor extends People{
     private String department;
-    private int professorId;
+    private String professorId;
 
     public Professor(){
 
@@ -59,10 +59,10 @@ public class Professor extends People{
     }
 
     @DynamoDBIndexHashKey(attributeName = "professorId", globalSecondaryIndexName = "idx_professorId")
-    public int getProfessorId() {
+    public String getProfessorId() {
         return this.professorId;
     }
-    public void setProfessorId(int id) {
+    public void setProfessorId(String id) {
         this.professorId = id;
     }
 

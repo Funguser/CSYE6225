@@ -13,8 +13,8 @@ import java.util.List;
 @DynamoDBTable(tableName = "student")
 public class Student extends People {
     String department;
-    int studentId;
-    List<Course> courseList;
+    String studentId;
+    List<String> courseList;
 
     public Student(String firstName, String lastName, Date registerDate, String id) {
         super(firstName, lastName, registerDate, id);
@@ -61,10 +61,10 @@ public class Student extends People {
     }
 
     @DynamoDBIndexHashKey(attributeName = "studentId", globalSecondaryIndexName = "idx_studentId")
-    public int getStudentId() {
+    public String getStudentId() {
         return this.studentId;
     }
-    public void setStudentId(int id) {
+    public void setStudentId(String id) {
         this.studentId = id;
     }
 
@@ -81,11 +81,11 @@ public class Student extends People {
 
 
     @DynamoDBAttribute(attributeName = "courseList")
-    public List<Course> getCourseList() {
+    public List<String> getCourseList() {
         return courseList;
     }
 
-    public void setCourseList(List<Course> courseList) {
+    public void setCourseList(List<String> courseList) {
         this.courseList = courseList;
     }
 

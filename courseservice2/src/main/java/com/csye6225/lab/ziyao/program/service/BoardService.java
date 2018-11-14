@@ -14,22 +14,33 @@ import java.util.Map;
 
 public class BoardService {
     static DynamoDBConnector dynamoDB;
-    DynamoDBMapper mapper;
-    CourseService courseService;
+    static DynamoDBMapper mapper;
+
+    static {
+        try {
+            dynamoDB = new DynamoDBConnector();
+            dynamoDB.init();
+            mapper = new DynamoDBMapper(dynamoDB.getConnector());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public BoardService() throws Exception {
         dynamoDB = new DynamoDBConnector();
         dynamoDB.init();
         mapper = new DynamoDBMapper(dynamoDB.getConnector());
-        courseService = new CourseService();
     }
 
-    public Board getBoard(int boardId) {
+    public static Board getBoard(String boardId) {
+        if (boardId == null)
+            return null;
         Board board = new Board();
         board.setBoardId(boardId);
 
         Map<String, AttributeValue> eav = new HashMap<>();
-        eav.put("v_id", new AttributeValue().withN(String.valueOf(boardId)));
+        eav.put("v_id", new AttributeValue().withS(boardId));
         DynamoDBQueryExpression<Board> spec = new DynamoDBQueryExpression<Board>();
         spec.setHashKeyValues(board);
         spec.setIndexName("idx_boardId");
@@ -42,32 +53,55 @@ public class BoardService {
     }
 
     public Board addBoard(Board board) {
-        if (board.getBoardId() == 0)
+        if (board.getBoardId() == null || board.getCourseId() == null)
             return null;
-        int courseId = board.getCourseId();
-        Course course = courseService.getCourse(courseId);
+        String courseId = board.getCourseId();
+        Course course = CourseService.getCourse(courseId);
         if (course == null)
             return null;
+        if (course.getBoardId() != null && !course.getBoardId().equals(board.getBoardId()))
+            return null;
+
         Board duBoard = getBoard(board.getBoardId());
         if (duBoard != null)
             return null;
+        course.setBoardId(board.getBoardId());
+        mapper.save(course);
         mapper.save(board);
         return board;
     }
 
-    public Board updateBoardInformation(int boardId, Board board) {
+    public Board updateBoardInformation(String boardId, Board board) {
         Board bor = getBoard(boardId);
-        if (bor == null)
+        if (bor == null || board.getCourseId() == null)
             return null;
+
+
+        Course newCourse = CourseService.getCourse(board.getCourseId());
+        if (newCourse == null || (newCourse.getBoardId() != null && !boardId.equals(newCourse.getBoardId())))
+            return null;
+        deleteBoard(boardId);
+        Course course = CourseService.getCourse(bor.getCourseId());
+        newCourse.setBoardId(boardId);
+        course.setBoardId("");
+        mapper.save(course);
+        mapper.save(newCourse);
+
         bor.setCourseId(board.getCourseId());
+
         mapper.save(bor);
         return bor;
     }
 
-    public Board deleteBoard(int boardID) {
+    public Board deleteBoard(String boardID) {
         Board board = getBoard(boardID);
         if (board == null)
             return null;
+        Course course = CourseService.getCourse(board.getCourseId());
+        if (course != null) {
+            course.setBoardId("");
+            mapper.save(course);
+        }
         mapper.delete(board);
         return board;
     }

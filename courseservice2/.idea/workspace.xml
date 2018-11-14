@@ -5,34 +5,29 @@
       <artifact name="courseservice2:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java" line="67" />
+    <bookmark url="file://$PROJECT_DIR$/README.MD" line="38" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ef056f4b-a4e7-4e66-89c7-b54b0657334f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/lambda/lambdaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Announcement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/AnnouncementResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/BoardResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/DynamoDBTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/DynamoDB/DynamoDBConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/People.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Professor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/ProfessorsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/ProfessorsResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/ProfessorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/ProfessorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Announcement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Announcement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Lecture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Roster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/AnnouncementResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/AnnouncementResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/BoardResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/BoardResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/CourseResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/CourseResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/ProgramResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/ProgramResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/ProgramService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/ProgramService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/resource/InMemoryDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/resource/InMemoryDatabase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,7 +96,7 @@
     <session id="-155788163">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="4" />
@@ -110,74 +105,59 @@
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="MD" value="2" />
-          <entry key="class" value="24" />
-          <entry key="java" value="158" />
+          <entry key="MD" value="4" />
+          <entry key="class" value="36" />
+          <entry key="java" value="170" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="24" />
-          <entry key="JAVA" value="158" />
-          <entry key="Markdown" value="2" />
+          <entry key="CLASS" value="36" />
+          <entry key="JAVA" value="170" />
+          <entry key="Markdown" value="4" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="MD" value="609" />
+          <entry key="MD" value="1225" />
           <entry key="dummy" value="11" />
-          <entry key="java" value="18616" />
-          <entry key="txt" value="92" />
+          <entry key="java" value="21854" />
+          <entry key="txt" value="96" />
           <entry key="xml" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18616" />
-          <entry key="Markdown" value="609" />
-          <entry key="PLAIN_TEXT" value="103" />
+          <entry key="JAVA" value="21854" />
+          <entry key="Markdown" value="1225" />
+          <entry key="PLAIN_TEXT" value="107" />
           <entry key="XML" value="16" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45878762">
+    <splitter split-orientation="horizontal" split-proportion="0.68961036">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Board.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/BoardResource.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="960">
-                  <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#549#550#0" expanded="true" />
-                    <element signature="e#602#603#0" expanded="true" />
-                    <element signature="e#737#738#0" expanded="true" />
-                    <element signature="e#788#789#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="360">
+                  <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
                 </state>
               </provider>
             </entry>
@@ -185,8 +165,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/AnnouncementResource.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1020">
-                  <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+                <state relative-caret-position="-55">
+                  <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -197,11 +177,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+                <state relative-caret-position="190">
+                  <caret line="73" column="49" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1175#1182#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -210,8 +189,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/DynamoDB/DynamoDBConnector.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+                <state relative-caret-position="360">
+                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -220,31 +199,33 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/ProgramResource.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/MyResource.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="700">
-                  <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="960">
-                  <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+                <state relative-caret-position="160">
+                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.MD">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="587">
+                    <caret line="109" column="19" lean-forward="true" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+                <state relative-caret-position="576">
+                  <caret line="94" column="82" selection-start-line="94" selection-start-column="82" selection-end-line="94" selection-end-column="82" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1152#1166#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -253,21 +234,27 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="725">
-                  <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+                <state relative-caret-position="746">
+                  <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1721#1729#0" expanded="true" />
+                    <element signature="e#1859#1867#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/ProgramService.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Announcement.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="740">
-                  <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+                <state relative-caret-position="184">
+                  <caret line="24" column="80" lean-forward="true" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+                  <folding>
+                    <element signature="e#1075#1076#0" expanded="true" />
+                    <element signature="e#1114#1115#0" expanded="true" />
+                    <element signature="e#1178#1179#0" expanded="true" />
+                    <element signature="e#1234#1235#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -279,8 +266,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Board.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="80">
-                  <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+                <state relative-caret-position="480">
+                  <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -288,15 +275,32 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Professor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+                <state relative-caret-position="820">
+                  <caret line="67" selection-start-line="67" selection-end-line="67" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/BoardResource.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                  <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
                   <folding>
-                    <element signature="e#1484#1485#0" expanded="true" />
-                    <element signature="e#1512#1513#0" expanded="true" />
-                    <element signature="e#1650#1651#0" expanded="true" />
-                    <element signature="e#1689#1690#0" expanded="true" />
-                    <element signature="e#1730#1731#0" expanded="true" />
-                    <element signature="e#1767#1768#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/CourseResource.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="251">
+                  <caret line="32" selection-start-line="32" selection-end-line="32" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#939#940#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -305,17 +309,12 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Course.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Announcement.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+                <state relative-caret-position="468">
+                  <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+                  <folding>
+                    <element signature="e#677#678#0" expanded="true" />
+                    <element signature="e#734#735#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -323,42 +322,44 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/ProfessorsResource.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="37" column="49" lean-forward="true" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+                <state relative-caret-position="439">
+                  <caret line="52" selection-start-line="52" selection-end-line="54" selection-end-column="69" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/ProfessorService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="397">
-                  <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+                <state relative-caret-position="435">
+                  <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1678#1689#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Student.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="500">
-                  <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+                <state relative-caret-position="371">
+                  <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+                <state relative-caret-position="531">
+                  <caret line="141" column="5" lean-forward="true" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1284#1293#0" expanded="true" />
+                    <element signature="e#1411#1420#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -383,6 +384,7 @@
       <find>Announcement</find>
       <find>annoucementService</find>
       <find>student</find>
+      <find>noucement</find>
     </findStrings>
     <replaceStrings>
       <replace>announcement</replace>
@@ -392,6 +394,7 @@
       <replace>announcementService</replace>
       <replace>Course</replace>
       <replace>course</replace>
+      <replace>nouncement</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -419,33 +422,33 @@
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Program.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Roster.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Lecture.java" />
-        <option value="$PROJECT_DIR$/README.MD" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/DynamoDBTester.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/ProfessorsResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/People.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/ProgramService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/CourseResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnoucementService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/AnnoucementResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/BoardResource.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/lambda/lambdaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/ProgramResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/AnnouncementResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Professor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/DynamoDB/DynamoDBConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/resource/InMemoryDatabase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/resource/helper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Course.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/DynamoDB/DynamoDBConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Professor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/ProfessorsResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/BoardResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/CourseResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Board.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Announcement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/ProfessorService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/AnnouncementResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Announcement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java" />
+        <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
   </component>
@@ -470,10 +473,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="75" />
-    <option name="y" value="-8" />
-    <option name="width" value="3863" />
-    <option name="height" value="2111" />
+    <option name="x" value="-2" />
+    <option name="y" value="82" />
+    <option name="width" value="3864" />
+    <option name="height" value="2124" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -658,7 +661,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541904020184" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542176238719" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -857,7 +860,9 @@
       <workItem from="1541556921332" duration="17819000" />
       <workItem from="1541818057512" duration="1001000" />
       <workItem from="1541819094986" duration="1832000" />
-      <workItem from="1541887745572" duration="10189000" />
+      <workItem from="1541887745572" duration="18190000" />
+      <workItem from="1542159352011" duration="2659000" />
+      <workItem from="1542163052282" duration="11029000" />
     </task>
     <task id="LOCAL-00001" summary="10/14 start to ass1">
       <created>1539575921152</created>
@@ -894,11 +899,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539833545475</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ass2">
+      <created>1541904139854</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1541904139854</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98429000" />
+    <option name="totallyTimeSpent" value="120118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -913,7 +925,7 @@
     <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08827038" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08151093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -923,8 +935,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32852387" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33518666" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39952344" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33518666" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4225576" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32949972" />
@@ -960,7 +972,8 @@
     <MESSAGE value="ass 1 update prof&amp;student part" />
     <MESSAGE value="ass 1 update" />
     <MESSAGE value="update elastic beanstalk url" />
-    <option name="LAST_COMMIT_MESSAGE" value="update elastic beanstalk url" />
+    <MESSAGE value="ass2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ass2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -972,14 +985,8 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java</url>
-          <line>25</line>
+          <line>36</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -997,21 +1004,51 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java</url>
-          <line>62</line>
+          <line>93</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java</url>
-          <line>89</line>
+          <line>150</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java</url>
-          <line>104</line>
+          <line>165</line>
           <properties />
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1032,13 +1069,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/resource/Roster.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/MyResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.16/jersey-container-servlet-core-2.16.jar!/org/glassfish/jersey/servlet/ServletContainer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1102,27 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.16/jersey-server-2.16.jar!/org/glassfish/jersey/server/model/ResourceMethodInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="210" selection-start-line="210" selection-end-line="210" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.16/jersey-server-2.16.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.16/jersey-server-2.16.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.16/jersey-server-2.16.jar!/org/glassfish/jersey/server/model/internal/JavaResourceMethodDispatcherProvider.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
@@ -1135,16 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="20">
-            <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1163,29 +1162,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Lecture.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1364#1365#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1196,23 +1176,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/CourseResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/lambda/lambdaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1230,44 +1197,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/BoardResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/AnnouncementResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="51" column="28" lean-forward="true" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/ProgramService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
           <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/DynamoDB/DynamoDBConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1297,129 +1230,225 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.297/aws-java-sdk-dynamodb-1.11.297.jar!/com/amazonaws/services/dynamodbv2/datamodeling/AbstractDynamoDBMapper.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/resource/helper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/People.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-          <folding>
-            <element signature="e#2297#2298#0" expanded="true" />
-            <element signature="e#2372#2373#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/resource/helper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.297/aws-java-sdk-dynamodb-1.11.297.jar!/com/amazonaws/services/dynamodbv2/model/AttributeValue.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="480">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/MyResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.297/aws-java-sdk-dynamodb-1.11.297.jar!/com/amazonaws/services/dynamodbv2/datamodeling/AbstractDynamoDBMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="197" column="37" selection-start-line="197" selection-start-column="37" selection-end-line="197" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.16/jersey-server-2.16.jar!/org/glassfish/jersey/server/model/ResourceMethodInvoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="245" selection-start-line="245" selection-end-line="245" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/DynamoDB/DynamoDBConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/ProfessorsResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/CourseResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="37" column="49" lean-forward="true" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Announcement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Professor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="251">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1767#1768#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/ProfessorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        <state relative-caret-position="468">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1678#1689#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        <state relative-caret-position="686">
+          <caret line="992" column="13" lean-forward="true" selection-start-line="992" selection-start-column="13" selection-end-line="992" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1284#1293#0" expanded="true" />
+            <element signature="e#1859#1867#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        <state relative-caret-position="190">
+          <caret line="73" column="49" selection-start-line="73" selection-start-column="49" selection-end-line="73" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1175#1182#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Professor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="820">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.16/jersey-server-2.16.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/BoardResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1721#1729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="141" column="5" lean-forward="true" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1411#1420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/ProfessorsResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="52" selection-start-line="52" selection-end-line="54" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.16/jersey-server-2.16.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Announcement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="24" column="80" lean-forward="true" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+          <folding>
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/resources/AnnouncementResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/ProfessorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        <state relative-caret-position="576">
+          <caret line="94" column="82" selection-start-line="94" selection-start-column="82" selection-end-line="94" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1152#1166#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="587">
+            <caret line="109" column="19" lean-forward="true" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
