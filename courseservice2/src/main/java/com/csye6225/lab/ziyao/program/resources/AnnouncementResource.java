@@ -17,9 +17,9 @@ public class AnnouncementResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("/{annoucenmentId}")
-    public Announcement getAnnouncement(@PathParam("annoucenmentId") String AnnouncementId){
-        return announcementService.getAnnouncement(AnnouncementId);
+    @Path("/{boardId}_{announcementId}")
+    public Announcement getAnnouncement(@PathParam("announcementId") String announcementId, @PathParam("boardId") String boardId){
+        return announcementService.getAnnouncement(announcementId, boardId);
     }
 
     @POST
@@ -30,19 +30,19 @@ public class AnnouncementResource {
     }
 
     @PUT
-    @Path("/{AnnouncementId}")
+    @Path("/{boardId}_{announcementId}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Announcement updateAnnouncement(@PathParam("AnnouncementId") String AnnouncementId, Announcement annoucenment){
-        return announcementService.updateAnnouncementInformation(AnnouncementId, annoucenment);
+    public Announcement updateAnnouncement(@PathParam("announcementId") String announcementId, @PathParam("boardId") String boardId,  Announcement annoucenment){
+        return announcementService.updateAnnouncementInformation(announcementId, boardId, annoucenment);
     }
 
 
     @DELETE
-    @Path("/{AnnouncementId}")
+    @Path("/{boardId}_{announcementId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Announcement deleteAnnouncement(@PathParam("AnnouncementId") String announcementId){
-        return announcementService.deleteAnnouncement(announcementId);
+    public Announcement deleteAnnouncement(@PathParam("announcementId") String announcementId, @PathParam("boardId") String boardId){
+        return announcementService.deleteAnnouncement(announcementId, boardId);
     }
 
 

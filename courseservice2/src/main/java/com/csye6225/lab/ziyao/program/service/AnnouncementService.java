@@ -35,18 +35,24 @@ public class AnnouncementService {
     }
 
 
-    public static Announcement getAnnouncement(String announcementId) {
-        if (announcementId == null)
+    public static Announcement getAnnouncement(String announcementId, String boardId) {
+        if (announcementId == null || boardId == null)
             return null;
-        Announcement announcement = new Announcement();
-        announcement.setAnnouncementId(announcementId);
-
+//        Announcement announcement = new Announcement();
+//        announcement.setAnnouncementId(announcementId);
+//        announcement.setBoardId(boardId);
         Map<String, AttributeValue> eav = new HashMap<>();
-        eav.put("v_id", new AttributeValue().withS(announcementId));
-        DynamoDBQueryExpression<Announcement> spec = new DynamoDBQueryExpression<Announcement>();
-        spec.setHashKeyValues(announcement);
-        spec.setIndexName("idx_announcementId");
-        spec.setConsistentRead(false);
+        eav.put(":v_ann", new AttributeValue().withS(announcementId));
+        eav.put(":v_bor", new AttributeValue().withS(boardId));
+        DynamoDBQueryExpression<Announcement> spec = new DynamoDBQueryExpression<Announcement>()
+                .withKeyConditionExpression("announcementId = :v_ann and boardId = :v_bor")
+                .withIndexName("idx_announcementId")
+                .withExpressionAttributeValues(eav)
+                .withConsistentRead(false);
+//        spec.setHashKeyValues(announcement);
+//        spec.setIndexName("idx_announcementId");
+//        spec.setRangeKeyConditions(eav);
+//        spec.setConsistentRead(false);
         List<Announcement> list = mapper.query(Announcement.class, spec);
 
         if (list.size() != 0)
@@ -57,7 +63,7 @@ public class AnnouncementService {
     public Announcement addAnnouncement(Announcement annoucenment) {
         if (annoucenment.getAnnouncementId() == null)
             return null;
-        Announcement ann = getAnnouncement(annoucenment.getAnnouncementId());
+        Announcement ann = getAnnouncement(annoucenment.getAnnouncementId(), annoucenment.getBoardId());
         if (ann != null)
             return null;
         if (BoardService.getBoard(annoucenment.getBoardId())== null)
@@ -66,19 +72,19 @@ public class AnnouncementService {
         return annoucenment;
     }
 
-    public Announcement updateAnnouncementInformation(String announcementId, Announcement announcement) {
-        Announcement ann = getAnnouncement(announcementId);
+    public Announcement updateAnnouncementInformation(String announcementId, String boardId, Announcement announcement) {
+        Announcement ann = getAnnouncement(announcementId, boardId);
         if (ann == null)
             return null;
         if (BoardService.getBoard(announcement.getBoardId()) == null)
             return null;
-        deleteAnnouncement(announcementId);
+        deleteAnnouncement(announcementId, boardId);
         addAnnouncement(announcement);
         return ann;
     }
 
-    public Announcement deleteAnnouncement(String announcementId) {
-        Announcement announcement = getAnnouncement(announcementId);
+    public Announcement deleteAnnouncement(String announcementId, String boardId) {
+        Announcement announcement = getAnnouncement(announcementId, boardId);
         if (announcement == null)
             return null;
         mapper.delete(announcement);

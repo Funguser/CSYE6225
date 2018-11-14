@@ -31,7 +31,7 @@ public class Announcement {
         this.announcementId = announcementId;
     }
 
-    @DynamoDBRangeKey(attributeName = "boardId")
+    @DynamoDBIndexRangeKey(attributeName = "boardId", globalSecondaryIndexName = "idx_announcementId")
     public String getBoardId() {
         return boardId;
     }

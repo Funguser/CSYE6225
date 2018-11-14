@@ -105,7 +105,7 @@ eg: /courses/23232
 /announcements  GET
 @param: boardId
 
-/announcements/announcementId GET
+/announcements/{boardId}_{announcementId} GET
 
 /announcements POST
 {
@@ -121,4 +121,4 @@ eg: /courses/23232
         "announcementText": "acdi3r"
 }
 
-/announcements/announcements DELETE
+/announcements/{boardId}_{announcementId} DELETE
