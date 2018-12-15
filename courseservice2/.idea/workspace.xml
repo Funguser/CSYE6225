@@ -11,25 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef056f4b-a4e7-4e66-89c7-b54b0657334f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/AWSService/SNSService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/StudentSubscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/CourseRegisteredStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/helper/CourseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/courseservice2_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/courseservice2_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/DynamoDB/DynamoDBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/AWSService/DynamoDBConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/lambda/lambdaTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/DAO/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/resources/StudentResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/ProfessorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/ProfessorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/people/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/DAO/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/AnnouncementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/csye6225/lab/ziyao/program/service/CourseService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="536">
-                <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+              <first_editor relative-caret-position="440">
+                <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               </first_editor>
               <second_editor />
             </state>
@@ -461,7 +443,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544847065735" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544847475739" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../IdeaProjects/lambda_test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -675,7 +657,7 @@
       <workItem from="1544580720753" duration="4792000" />
       <workItem from="1544651267567" duration="7000" />
       <workItem from="1544760197379" duration="5000" />
-      <workItem from="1544845760719" duration="1175000" />
+      <workItem from="1544845760719" duration="1639000" />
     </task>
     <task id="LOCAL-00001" summary="10/14 start to ass1">
       <created>1539575921152</created>
@@ -740,11 +722,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542244184600</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ass3">
+      <created>1544847111952</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544847111952</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172242000" />
+    <option name="totallyTimeSpent" value="172706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -757,7 +746,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17706667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -808,7 +796,8 @@
     <MESSAGE value="update elastic beanstalk url" />
     <MESSAGE value="ass2" />
     <MESSAGE value="ass2 update" />
-    <option name="LAST_COMMIT_MESSAGE" value="ass2 update" />
+    <MESSAGE value="ass3" />
+    <option name="LAST_COMMIT_MESSAGE" value="ass3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1294,8 +1283,8 @@
     <entry file="file://$PROJECT_DIR$/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="536">
-            <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+          <first_editor relative-caret-position="440">
+            <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>

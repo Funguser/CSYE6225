@@ -1,4 +1,4 @@
-###URL: http://courseservice-env.wspr2d4a47.us-west-1.elasticbeanstalk.com/webapi
+###URL: http://courseservice-zy-env.9abpgsfjma.us-west-1.elasticbeanstalk.com/webapi/
 ###Github: https://github.com/Funguser/CSYE6225/tree/master/courseservice2
 
 warning: incremental update not supported, return null if input params are invalid, require manually create id, id must be unique
