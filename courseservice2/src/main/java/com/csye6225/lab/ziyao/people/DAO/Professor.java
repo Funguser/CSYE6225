@@ -24,6 +24,7 @@ public class Professor extends People{
         this.department = department;
     }
 
+
     @DynamoDBAttribute(attributeName = "firstName")
     public String getFirstName() {
         return firstName;

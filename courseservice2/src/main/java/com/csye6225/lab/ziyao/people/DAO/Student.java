@@ -15,6 +15,7 @@ public class Student extends People {
     String department;
     String studentId;
     List<String> courseList;
+    String email;
 
     public Student(String firstName, String lastName, Date registerDate, String id) {
         super(firstName, lastName, registerDate, id);
@@ -79,8 +80,7 @@ public class Student extends People {
         this.registerDate = sdf.parse(date);
     }
 
-
-    @DynamoDBAttribute(attributeName = "courseList")
+//    @DynamoDBAttribute(attributeName = "courseList")
     public List<String> getCourseList() {
         return courseList;
     }
@@ -89,4 +89,12 @@ public class Student extends People {
         this.courseList = courseList;
     }
 
+    @DynamoDBAttribute(attributeName = "email")
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

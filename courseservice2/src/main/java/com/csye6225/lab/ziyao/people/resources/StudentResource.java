@@ -6,6 +6,7 @@ import com.csye6225.lab.ziyao.program.DAO.Course;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.util.ArrayList;
 import java.util.List;
 
 @Path("students")
@@ -49,6 +50,24 @@ public class StudentResource {
         if (department == null)
             return studentService.getAllStudent();
         return studentService.getStudentByDepartment(department);
+    }
+
+    @POST
+    @Path("/{studentId}/register/{courseId}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Student registerCourse(@PathParam("studentId") String id, @PathParam("courseId") String courseId) {
+        if (id == null || courseId == null)
+            return null;
+        return studentService.registerCourse(id, courseId);
+    }
+
+    @POST
+    @Path("/{studentId}/drop/{courseId}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Student dropCourse(@PathParam("studentId") String id, @PathParam("courseId") String courseId) {
+        if (id == null || courseId == null)
+            return null;
+        return studentService.dropCourse(id, courseId);
     }
 
 //    @GET

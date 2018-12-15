@@ -35,11 +35,11 @@ eg: professors/1323232
 @optional param: department
 
 /students POST jsonParams
+do not support directly add course while creating student
     {
         "studentId": "1323",
         "firstName": "A",
-        "lastName": "AA",
-        "courseList": []
+        "lastName": "AA"
     }
     
 /students/studentId GET
@@ -59,27 +59,27 @@ eg: students/1323
 /courses GET
 
 /courses POST jsonParams
+do not support directly add student while creating courses
     {
         "courseId": "23232",
         "professorId": "13",
         "TAId": "123",
         "department": "asdsadas",
-        "boardId": "2345",
-        "courseName": "fadsfa",
-        "registeredStudentList": []
+        "courseName": "fadsfa"
     }
     
 /courses/courseId GET
 eg: /courses/23232
 
 /courses/courseId PUT jsonParams
+do not support directly add student while updating courses
+
     {
         "professorId": "13",
         "TAId": "123",
         "department": "asdsadas",
         "boardId": "2345",
-        "courseName": "fadsfa",
-        "registeredStudentList": []
+        "courseName": "fadsfa"
     }
     
 /courses/courseId DELETE

@@ -18,6 +18,7 @@ public class Course {
     String boardId;
     List<String> registeredStudentList;
     String courseName;
+    String topicArn;
 
     public Course(String courseName){
         this.courseName = courseName;
@@ -91,12 +92,22 @@ public class Course {
         this.boardId = boardId;
     }
 
-    @DynamoDBAttribute(attributeName = "studentList")
+//    @DynamoDBAttribute(attributeName = "studentList")
+    @DynamoDBIgnore
     public List<String> getRegisteredStudentList() {
         return registeredStudentList;
     }
 
     public void setRegisteredStudentList(List<String> registeredStudentList) {
         this.registeredStudentList = registeredStudentList;
+    }
+
+    @DynamoDBAttribute(attributeName = "topicArn")
+    public String getTopicArn() {
+        return topicArn;
+    }
+
+    public void setTopicArn(String topicArn) {
+        this.topicArn = topicArn;
     }
 }

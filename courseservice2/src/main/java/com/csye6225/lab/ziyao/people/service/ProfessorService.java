@@ -3,17 +3,11 @@ package com.csye6225.lab.ziyao.people.service;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
-import com.amazonaws.services.dynamodbv2.document.spec.QuerySpec;
-import com.amazonaws.services.dynamodbv2.document.utils.ValueMap;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
-import com.amazonaws.services.dynamodbv2.model.GlobalSecondaryIndex;
-import com.csye6225.lab.ziyao.DynamoDB.DynamoDBConnector;
+import com.csye6225.lab.ziyao.AWSService.DynamoDBConnector;
 import com.csye6225.lab.ziyao.program.DAO.Course;
-import com.csye6225.lab.ziyao.resource.InMemoryDatabase;
 import com.csye6225.lab.ziyao.people.DAO.Professor;
 
-import javax.management.Attribute;
-import javax.management.AttributeValueExp;
 import java.util.*;
 
 public class ProfessorService {
@@ -48,8 +42,6 @@ public class ProfessorService {
         Professor prof = new Professor();
         prof.setProfessorId(profId);
 
-        Map<String, AttributeValue> eav = new HashMap<>();
-        eav.put("v_id", new AttributeValue().withN(String.valueOf(profId)));
         DynamoDBQueryExpression<Professor> spec = new DynamoDBQueryExpression<Professor>();
         spec.setHashKeyValues(prof);
         spec.setIndexName("idx_professorId");

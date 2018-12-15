@@ -1,7 +1,5 @@
-package com.csye6225.lab.ziyao.DynamoDB;
+package com.csye6225.lab.ziyao.AWSService;
 
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.InstanceProfileCredentialsProvider;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;

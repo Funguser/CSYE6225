@@ -4,11 +4,8 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
 import com.amazonaws.services.dynamodbv2.model.AttributeValue;
-import com.amazonaws.services.dynamodbv2.model.Condition;
-import com.csye6225.lab.ziyao.DynamoDB.DynamoDBConnector;
-import com.csye6225.lab.ziyao.people.DAO.Student;
+import com.csye6225.lab.ziyao.AWSService.DynamoDBConnector;
 import com.csye6225.lab.ziyao.program.DAO.Announcement;
-import com.csye6225.lab.ziyao.program.DAO.Board;
 
 import java.util.HashMap;
 import java.util.List;
