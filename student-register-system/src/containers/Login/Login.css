@@ -1,0 +1,26 @@
+.Login {
+    width: 60%;
+    margin: 16px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #eee;
+    padding: 16px;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .Login {
+        width: 450px;
+    }
+}
+
+.Button {
+    background-color: #dad735;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #966909;
+    color: #966909;
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 2px #966909;
+}
